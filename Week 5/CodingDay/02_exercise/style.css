@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* first, second and third row */
+    min-height: 100%;
+}
+
+
+header {
+    display: inline-block;
+    max-width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+header h1 {
+    padding-top: 0px;
+    margin-left: 10px;
+    font-style: italic;
+    margin-top: 10px;
+    
+}
+
+header img {
+    margin-left: 20px;
+}
+
+header > * {
+    float: left;
+}
+main {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+
+.mainnavigation {
+    width: 20%;
+    border-right: 1px solid gray;
+    margin:0;
+    padding: 0;
+}
+
+.maincenter {
+    background-color: rgb(236, 236, 236);
+    width: 70%;
+    border-right: 1px solid gray;
+    
+}
+
+.mainads {
+    width: 10%;
+    text-align: center;
+
+}
+
+.advertisement {
+    border: 1px solid gray;
+    text-align: center;
+    width: 90px;
+    margin: 10px auto;
+    height: 95px;
+    padding: 20px 0;
+    color: gray;
+}
+
+.blogpost {
+    border: 1px solid gray;
+    background-color: white;
+    width: 80%;
+    margin: 15px auto;
+    padding-left: 10px;
+}
+
+.blogpost h1 {
+    color: green;
+}
+
+.blogpost p {
+    color: gray;
+    font-weight: bold;
+}
+
+
+
+footer {
+    color:white;
+    background-color: black;
+    font-weight: bold;
+    text-align: right;
+
+}
+
+.footerlinks {
+    
+    height: 130px;
+}
+
+.navigation, .footerlinks {
+    list-style-type: none;
+}
+
+
+.navigation > li {
+    border-bottom: 1px solid gray;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    margin:0;
+    color: gray;
+}
+
+.navigation {
+    margin:0;
+    padding: 0;
+}
+
+.footerlinks > li {
+    padding-right: 20px;
+    margin: 10px;
+}
+
+.footerlinks li:first-child {
+    margin-top: 40px;
+}
+ 
+.footerlinks li:last-child {
+    margin-bottom: 40px;
+}
+
+
